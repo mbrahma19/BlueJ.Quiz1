@@ -52,13 +52,17 @@ public class LoopFun
                 char newChar = s.charAt(0);
                 System.out.println("newChar : " + newChar);
                 if(newChar == 'x'){
-                    result = result + String.valueOf('a');
+                    result = result + Character.toString('a');
+                    System.out.println("x :" + result);
                 } else if(newChar == 'y'){
-                    result = result + String.valueOf('b');
+                    result = result + Character.toString('b');
+                    System.out.println("y :" +result);
                 } else if(newChar == 'z'){
-                    result = result + String.valueOf('c');
+                    result = result + Character.toString('c');
+                    System.out.println("z : " + result);
                 }else{
-                    result = result + String.valueOf((newChar + 3));
+                    result = result + Character.toString((char)(newChar + 3));
+                    System.out.println("others : " + result);
                 }
                 
             }
